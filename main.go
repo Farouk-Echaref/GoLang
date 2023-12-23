@@ -72,4 +72,21 @@ func main(){
 	fmt.Println(nums)
 	sort.Ints(nums)
 	fmt.Println(nums)
+
+	// loops
+	x := 0
+	for (x < 5){
+		fmt.Println("x: ", x)
+		x++
+	}
+	for i := 0; i < 5; i++ {
+		fmt.Println("i: ", i)
+	}
+	strs := []string{"tes1", "tes2", "tes3", "tes4"}
+	for index, value := range strs{
+		fmt.Println(index, value)
+	}
+	for _, value := range strs{
+		fmt.Print(value)
+	}
 }
