@@ -2,7 +2,11 @@
 package main
 
 // importing fmt package to handle formating strings and printing messages
-import "fmt"
+import (
+	"fmt"
+	"strings"
+	"sort"
+)
 
 // main function that gets called when the program starts
 func main(){
@@ -55,4 +59,17 @@ func main(){
 	//slice ranges
 	rng := slc[0:3]
 	fmt.Println(rng)
+
+	//strings package
+	phrase := "Testing strings package"
+	fmt.Println(strings.Contains(phrase, "package"))
+	//return a new one
+	fmt.Println(strings.ReplaceAll(phrase, " ", "_"))
+	fmt.Println(strings.Split(phrase, " "))
+
+	//sort package
+	nums := []int{4, 3, -1, 6, 0, 44, -4}
+	fmt.Println(nums)
+	sort.Ints(nums)
+	fmt.Println(nums)
 }
