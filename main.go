@@ -8,6 +8,21 @@ import (
 	"sort"
 )
 
+func getInitials(n string) (string, string){
+	var initials []string
+
+	splitted := strings.Split(n, " ")
+
+	for _, val := range splitted{
+		initials = append(initials, val[:1])
+	}
+
+	if len(initials) > 1 {
+		return initials[0], initials[1]
+	}
+	return initials[0], "_"
+}
+
 // main function that gets called when the program starts
 func main(){
 
@@ -90,6 +105,8 @@ func main(){
 		fmt.Print(value)
 	}
 	for i := 0; i < len(strs); i++{
-		fmt.Print(strs[i])
+		fmt.Println(strs[i])
 	}
+
+	fmt.Println(getInitials("Fuck"))
 }
