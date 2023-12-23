@@ -44,4 +44,15 @@ func main(){
 
 	//print the array and it's length
 	fmt.Println(arr, len(arr))
+	arr2 := [3]string{"test", "test2", "test3"}
+	fmt.Println(arr2)
+	
+	//slices (use array under the hood)
+	slc := []int{1, 2, 3, 4, 5, 6}
+	slc = append(slc, 69)
+	fmt.Println(slc)
+
+	//slice ranges
+	rng := slc[0:3]
+	fmt.Println(rng)
 }
