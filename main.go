@@ -89,4 +89,7 @@ func main(){
 	for _, value := range strs{
 		fmt.Print(value)
 	}
+	for i := 0; i < len(strs); i++{
+		fmt.Print(strs[i])
+	}
 }
