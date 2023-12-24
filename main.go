@@ -109,4 +109,6 @@ func main(){
 	}
 
 	fmt.Println(getInitials("Fuck"))
+
+	MyPrint()
 }
