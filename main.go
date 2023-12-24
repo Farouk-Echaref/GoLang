@@ -110,5 +110,8 @@ func main(){
 
 	fmt.Println(getInitials("Fuck"))
 
-	MyPrint()
+	// MyPrint()
+
+	obj := CreateObj("deez nuts")
+	fmt.Println(obj)
 }
