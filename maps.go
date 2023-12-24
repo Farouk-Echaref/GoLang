@@ -26,4 +26,6 @@ func main(){
 	for k, v := range maps2{
 		fmt.Println(k, " = ", v)
 	}
+
+	//pointer wrapper values:slices, maps, functions, every other data is passed by value in functions
 }
