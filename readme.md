@@ -13,10 +13,12 @@
             |_ feat_test.go
         ```
         - Test Package:
+        ```go
             feat
             |_ feat.go
             feat_test
             |_ feat_test.go
+        ```
 - Test Cases for individual test functions:
     * Naming:
         - Pascal Case
