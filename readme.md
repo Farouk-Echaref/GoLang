@@ -7,9 +7,11 @@
         - main_test.go for main.go
     * Placement::
         - Same Placement:
+        ```go
             feat
             |_ feat.go
             |_ feat_test.go
+        ```
         - Test Package:
             feat
             |_ feat.go
